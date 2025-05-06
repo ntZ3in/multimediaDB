@@ -1,0 +1,176 @@
+/* src/App.css */
+
+/* General styles */
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+.upload-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #4CAF50; /* Border color */
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* Hover effect for upload label */
+.upload-label:hover {
+  background-color: #e8e8e8; /* Change background on hover */
+}
+
+/* Hide the file input */
+.upload-input {
+  display: none;
+}
+
+/* Style for upload icon */
+.upload-icon {
+  width: 30px;  /* Set icon size */
+  height: 30px; /* Set icon size */
+  margin-left: 10px; /* Space between text and icon */
+}
+
+/* Style for span text */
+.upload-label span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4CAF50; /* Text color */
+}
+
+.upload-box {
+  background-color: #f3f3f3;
+  padding: 15px;
+  display: inline-block;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid #ccc; /* Viền màu xám */
+  background: linear-gradient(45deg, #4CAF50, #2196F3); /* Màu nền gradient */
+  color: white;
+  margin-top: 10px;
+}
+
+.upload-box:hover {
+  background: linear-gradient(45deg, #2196F3, #4CAF50); /* Đổi màu khi hover */
+}
+
+.file-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.file-info span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.play-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.play-icon {
+  width: 20px; /* Điều chỉnh kích thước icon Play */
+  height: 20px; /* Điều chỉnh chiều cao icon Play */
+  margin-right: 5px; /* Khoảng cách giữa icon và văn bản */
+}
+
+.play-btn:hover {
+  opacity: 0.8; /* Thêm hiệu ứng khi hover */
+}
+
+.pause-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pause-icon {
+  width: 20px; /* Adjust the width of the icon */
+  height: 20px; /* Adjust the height of the icon */
+  margin-right: 5px; /* Add some spacing between the icon and text */
+}
+
+.pause-btn:hover {
+  opacity: 0.8; /* Add a hover effect */
+}
+
+.play-btn, .pause-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.play-btn:hover, .pause-btn:hover {
+  background-color: #45a049;
+}
+
+.play-btn i, .pause-btn i {
+  font-size: 18px; /* Adjust icon size */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.waveform-container {
+  width: 80%;
+  height: 200px;
+  background-color: #f3f3f3;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.recent-files {
+  margin-top: 30px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.recent-files ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recent-files li {
+  margin: 10px 0;
+}
+
+.recent-files li .file-info {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-files li .file-info button {
+  background-color: #008CBA;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.recent-files li .file-info button:hover {
+  background-color: #007bb5;
+}
